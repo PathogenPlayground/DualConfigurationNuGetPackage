@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsumer", "TestConsumer\TestConsumer.csproj", "{525948FB-D3FD-412E-8E90-7E7949701067}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		WeirdConfiguration|Any CPU = WeirdConfiguration|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525948FB-D3FD-412E-8E90-7E7949701067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525948FB-D3FD-412E-8E90-7E7949701067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525948FB-D3FD-412E-8E90-7E7949701067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525948FB-D3FD-412E-8E90-7E7949701067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525948FB-D3FD-412E-8E90-7E7949701067}.WeirdConfiguration|Any CPU.ActiveCfg = WeirdConfiguration|Any CPU
+		{525948FB-D3FD-412E-8E90-7E7949701067}.WeirdConfiguration|Any CPU.Build.0 = WeirdConfiguration|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA0F3966-5946-4B69-9E78-4F5AB9064F8B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <!-- Minimum client version of 2.5 as per https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package -->
+  <metadata minClientVersion="2.5">
+    <id>DualConfigurationNuGetPackage</id>
+    <version>1.0.0</version>
+    <title>DualConfigurationNuGetPackage</title>
+    <authors>David Maas</authors>
+    <owners>David Maas</owners>
+    <description>A dummy NuGet package that contains both release and debug configurations.</description>
+    <releaseNotes>
+      Initial release.
+    </releaseNotes>
+    <copyright>Copyright © 2018 by David Maas</copyright>
+  </metadata>
+  <files>
+    <file src="bin\Debug\DualConfigurationNuGetPackage.dll" target="lib-Debug" />
+    <file src="bin\Release\DualConfigurationNuGetPackage.dll" target="lib-Release" />
+    <file src="build\**" target="build" />
+  </files>
+</package>

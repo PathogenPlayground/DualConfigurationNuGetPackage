@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DualConfigurationNuGetPackage_Configuration Condition="'$(DualConfigurationNuGetPackage_Configuration)' == ''">$(Configuration)</DualConfigurationNuGetPackage_Configuration>
+    <DualConfigurationNuGetPackage_AssemblyPath>$(MSBuildThisFileDirectory)..\lib-$(DualConfigurationNuGetPackage_Configuration)\DualConfigurationNuGetPackage.dll</DualConfigurationNuGetPackage_AssemblyPath>
+  </PropertyGroup>
+  <Target Name="EnsureDualConfigurationNuGetPackageConfigurationIsValid" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(DualConfigurationNuGetPackage_AssemblyPath)')" Text="DualConfigurationNuGetPackage is not compatible with the $(DualConfigurationNuGetPackage_Configuration) configuration. Manually specify DualConfigurationNuGetPackage_Configuration to resolve this error." />
+  </Target>
+  <ItemGroup>
+    <Reference Include="$(DualConfigurationNuGetPackage_AssemblyPath)" Condition="Exists('$(DualConfigurationNuGetPackage_AssemblyPath)')" />
+  </ItemGroup>
+</Project>
