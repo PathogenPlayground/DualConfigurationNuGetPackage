@@ -22,6 +22,15 @@ I did not test it with the new `csproj` format (for either the package or the co
 
 ## Using the Demonstration
 
+### From MyGet
+
+The package is published at [pathogen-playground/DualConfigurationNuGetPackage](https://www.myget.org/feed/pathogen-playground/package/nuget/DualConfigurationNuGetPackage) on MyGet.
+
+* Add this feed as a NuGet package source. (Or install the package manually using the explicit source.)
+* Open `TestConsumer.sln` and build/run the various configurations. It will print what configuration the library was built with.
+
+### Self-Built
+
 * The project assumes `msbuild.exe` is located at `C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe`. If you have a different edition of Visual Studio or changed the install location, modify `DualConfigurationNuGetPackage\make-nuget-package.bat` accordingly.
 * Run `DualConfigurationNuGetPackage\make-nuget-package.bat`, this will build the project for `Debug` and `Release` configurations and pack the NuGet package.
 * Install the `DualConfigurationNuGetPackage\bin\DualConfigurationNuGetPackage.1.0.0.nupkg` in your local NuGet package repository.
